@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+
 class Solution:
 
     def exist(self, board: [[str]], word: str) -> bool:
@@ -13,10 +14,10 @@ class Solution:
             res = dfs(i + 1, j, k + 1) or dfs(i - 1, j, k + 1) or dfs(i, j + 1, k + 1) or dfs(i, j - 1, k + 1)
             board[i][j] = tmp
             return res
-        
+
         for i in range(len(board)):
             for j in range(len(board[0])):
                 if dfs(i, j, 0):
                     return True
-        
+
         return False
