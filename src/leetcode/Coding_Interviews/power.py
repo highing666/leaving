@@ -26,7 +26,7 @@ def power_with_unsigned_exponent(base, exponent):
     result *= result
     if exponent & 0x1 == 1:
         result *= base
-        
+
     return result
 
 
