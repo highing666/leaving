@@ -19,7 +19,6 @@ class Solution:
         if not root:
             return None
 
-        self.pre = None
         self.dfs(root)
         self.head.left, self.pre.right = self.pre, self.head
 
