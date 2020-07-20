@@ -8,16 +8,16 @@ class Solution:
     @staticmethod
     def find_continuous_sequence(target: int) -> List[List[int]]:
         result = []
-        l, r = 1, 2
-        while l < r:
-            temp_sum = (l + r) * (r - l + 1) / 2
+        left, right = 1, 2
+        while left < right:
+            temp_sum = (left + right) * (right - left + 1) / 2
             if temp_sum == target:
-                result.append([i for i in range(l, r + 1)])
-                l += 1
+                result.append([i for i in range(left, right + 1)])
+                left += 1
             elif temp_sum < target:
-                r += 1
+                right += 1
             else:
-                l += 1
+                left += 1
 
         return result
 
