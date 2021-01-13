@@ -1,7 +1,7 @@
 class Solution
 {
 public:
-    vector<vector<int>> threeSum(vector<int>& nums)
+    vector<vector<int>> threeSum(vector<int> &nums)
     {
         int n = nums.size();
         sort(nums.begin(), nums.end());
@@ -13,7 +13,7 @@ public:
             {
                 continue;
             }
-            
+
             int third = n - 1;
             int target = -nums[first];
             for (int second = first + 1; second < n; ++second)
@@ -28,7 +28,7 @@ public:
                     /* code */
                     --third;
                 }
-                
+
                 if (second == third)
                 {
                     break;
