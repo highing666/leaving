@@ -12,4 +12,5 @@ class TreeNode:
 class Solution:
 
     def merge_trees(self, t1: TreeNode, t2: TreeNode) -> TreeNode:
+        pass
 
