@@ -2,7 +2,6 @@
 
 from collections import Counter
 from heapq import heappush, heapreplace
-import heapq
 from typing import List
 
 
